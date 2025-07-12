@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio_VEERA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="veera image circle.png">
+
+    
+</head>
+<body class="overflow-x-hidden leading-8 dark:bg-darkTheme dark:text-white ">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+        <img src="header-bg-color.png" alt="" class="w-full">
+    </div>
+
+    <nav class="w-full fixed px-5 py-4 flex items-center justify-around z-50">
+        <h1 class="flex items-center gap-1 font-bold text-3xl animate-fadeInUp">
+            <span class="text-5xl text-red-600">V</span>EERA
+            <span class="text-5xl text-green-600">B</span>ABU
+            <span class="text-blue-500 text-4xl">∞</span>
+          </h1>
+          
+          
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50
+        dark:border dark:border-white/50 dark:bg-transparent">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#mywork">MY Work</a></li>
+            <li><a href="#contact">Contact Me!</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <button onclick="toggleDarkMode()">
+                <img src="moon_icon.png" alt="Moon Icon" class="w-6 dark:hidden">
+                <img src="sun_icon.png" alt="Moon Icon" class="w-6 hidden dark:block">
+            </button>
+            
+            <a href="#contact" class="hidden lg:flex items-center gap-3 px-8 py-2.5 border border-gray-500 rounded-full ml-6 dark:border-white/50">
+                Contact 
+                <img src="arrow-icon.png" alt="Arrow Icon" class="w-3 dark:hidden">
+                <img src="arrow-icon-dark.png" alt="Arrow Icon" class="w-3 hidden dark:block">
+            </a>
+            
+                <button class="block md:hidden ml-3" onclick="openmenu()">
+                <img src="menu-black.png" alt="" class="w-6 dark:hidden">
+                <img src="menu-white.png" alt="" class="w-6 hidden dark:block">
+            </button>
+        </div>
+        <ul id="sidemenu" class="flex md:hidden flex-col py-20 px-1 fixed -right-64 gap-4 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-darkTheme dark:text-white dark:border-l dark:border-white/20">
+
+        <div class="absolute right-6 top-6" onclick="closemenu()">
+                <img src="close-black.png" alt="" class="w-5 cursor-pointer dark:hidden">
+                <img src="close-white.png" alt="" class="w-5 cursor-pointer hidden dark:block">
+            </div>
+
+            <li><a href="#top" onclick="closemenu()">Home</a></li>
+            <li><a href="#about" onclick="closemenu()">About Me</a></li>
+            <li><a href="#services" onclick="closemenu()">Services</a></li>
+            <li><a href="#mywork" onclick="closemenu()">MY Work</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact Me!</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Header section-->
+ <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+    <img src="veera image circle.png" alt="" class="rounded-full w-32">
+    <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3 font-outfit">HI! I'm Veera Babu <img src="hand-icon.png" alt="" class="w-6"></h3>
+    <h1 class="text-3xl sm:text-6xl lg:text-66px font-outfit">
+        <span class="text-highlight">Frontend Web Developer</span>
+      </h1>
+      
+   <p class="max-w-2xl mx-auto">I'm C. Veerababu, a recent Computer Science graduate from India with a strong interest in front-end development. I enjoy building clean, responsive, and user-friendly websites using HTML, CSS, and JavaScript. I'm always eager to learn new technologies and improve my skills. Right now, I'm looking for a good opportunity to start my career and grow as a frontend developer by contributing to real-world projects</p>
+   <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+    <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-t from-[#b82e06] to-[#ffcc29] text-white flex items-center gap-2 dark:border-transparent">Contact Me! <img src="right-arrow-white.png" alt="" class="w-4"></a>
+    <a href="veera's resume.pdf" download class="px-10 py-3 border rounded-full border-gray-500 dark:border-gray-300 flex items-center gap-2 bg-white dark:bg-gray-800 dark:text-white dark:text-black">
+
+        My Resume 
+        <img src="download-icon.png" alt="" class="w-4 dark:hidden">
+        <img src="new downloade  white.png" alt="" class="w-4 hidden dark:block dark:text-white">
+        
+      </a>
+      </div>
+      </div>
+
+      <!-- About ME-->
+      <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">Introduction</h4>
+        <h2 class="text-center text-5xl mb-4">About Me</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 leading-7">
+            I'm C. Veerababu, a passionate Front-End Developer from India. I have recently graduated with a degree in Computer Science and I'm actively seeking frontend development roles. I specialize in creating responsive, user-friendly websites using HTML, CSS, JavaScript, and modern frameworks. My strengths include attention to detail, problem-solving, and a strong desire to continuously learn and improve. I’m excited to contribute to dynamic teams and build meaningful digital experiences.
+        </p>
+        
+        <div class="flex w-full flex-col lg:flex-row items-center gap-16 mb-14">
+            <!-- Left side image column -->
+            <div class="max-w-max mx-auto relative">
+                <img src="veera white backgrund.jpg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none ml-10">
+                <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-2xl flex items-center justify-center">
+                    <img src="circular-text.png" alt="" class="w-full animate-spin_slow">
+                    <img src="web dev.png" alt="" class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                </div>
+            </div>
+            
+            <!-- Right side content cards -->
+            <div class="flex-1">
+                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+                    <li class="border border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 hover:shadow-xl transition duration-500 dark:border-white dark:hover:bg-white/10 dark:hover:shadow-[5px_5px_0px_rgba(255,255,255,0.8)]">
+                        <img src="code-icon.png" alt="" class="w-7 mt-3 dark:hidden">
+                        <img src="code-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Languages</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">HTML, CSS, JavaScript, Python,React,Tailwind <br>Boostrap,Basic Sql</p>
+                    </li>
+                    <li class="border border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 hover:shadow-xl transition duration-500 dark:border-white dark:hover:bg-white/10 dark:hover:shadow-[5px_5px_0px_rgba(255,255,255,0.8)]">
+                        <img src="edu-icon.png" alt="Education Icon" class="w-7 mt-3 dark:hidden">
+                        <img src="edu-icon-dark.png" alt="Education Icon Dark" class="w-7 mt-3 hidden dark:block">
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80 leading-6">
+                          <strong>B.Tech in Computer Science & Engineering</strong><br>
+                          Sri Venkatesa Perumal College of Engineering and Technology, Puttur<br>
+                          Graduated: 2025
+                        </p>
+                      </li>
+                      
+                      <li class="border border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 hover:shadow-xl transition duration-500 dark:border-white dark:hover:bg-white/10 dark:hover:shadow-[5px_5px_0px_rgba(255,255,255,0.8)]">
+                        <img src="career-icon.png" alt="Career Icon" class="w-7 mt-3 dark:hidden">
+                        <img src="career-icon-dark.png" alt="Career Icon Dark" class="w-7 mt-3 hidden dark:block">
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Career Goal</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">To become a skilled Front-End Developer and build accessible, impactful websites and web apps for people worldwide.</p>
+                    </li>
+                    
+                    
+    
+                <h4 class="my-6 text-gray-700 dark:text-white/80">Tools I use</h4>
+                <ul class="flex items-center gap-3 sm:gap-5">
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="vscode.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="firebase.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="git.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="figma.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                        </ul>
+            </div>
+        </div>
+    </div>
+    
+        
+        <!-- Services section -->
+        <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+            <h4 class="text-center mb-2 text-lg">My Capabilities</h4>
+            <h2 class="text-center text-5xl">What I Can Do</h2>
+            <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+              As a passionate front-end developer, I enjoy building responsive websites, experimenting with Python, and learning about AI technologies. I aim to improve every day and build real-world web solutions.
+            </p>
+          
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10">
+          
+              <div class="border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 transition duration-500 dark:border-white dark:hover:bg-darkHover dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,0.8)]">
+                <img src="team.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Frontend Design</h3>
+                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">I design and code responsive, user-friendly websites using HTML, CSS, and JavaScript.</p>
+              </div>
+          
+              <div class="border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 transition duration-500 dark:border-white dark:hover:bg-darkHover dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,0.8)]">
+                <img src="python projects.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Python Practice</h3>
+                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">I build small Python projects and practice logic building through real-life problem solving.</p>
+              </div>
+          
+              <div class="border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 transition duration-500 dark:border-white dark:hover:bg-darkHover dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,0.8)]">
+                <img src="Ai-agent.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">AI Concepts</h3>
+                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">I’m learning AI basics and exploring how agents can solve simple problems using logic.</p>
+              </div>
+          
+              <div class="border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 transition duration-500 dark:border-white dark:hover:bg-darkHover dark:hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,0.8)]">
+                <img src="cv.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Resume Website</h3>
+                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">I can create clean and simple resume websites to help showcase someone's personal profile online.</p>
+              </div>
+          
+            </div>
+          </div>
+          
+
+<!--  MY Works   -->
+<div id="mywork" class="w-full px-[12%] py-10 scroll-mt-20">
+    <h4 class="text-center mb-2 text-lg">My Portfolio</h4>
+    <h2 class="text-center text-5xl">My Latest Work</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+      Explore my latest work! These recent projects highlight my focus on modern design, responsive layouts, and practical solutions through hands-on development.
+    </p>
+  
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-10 gap-5 dark:text-black">
+      
+      <!-- Project 1 -->
+      <div class="aspect-square bg-[url(my-work-1.png)] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+          <div>
+            <h2 class="font-semibold">Text to Image</h2>
+            <p class="text-sm text-gray-700">HTML | CSS | JavaScript</p>
+          </div>
+          <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-lg group-hover:bg-lime-300 transition">
+            <a href="https://cveerababu15.github.io/Text_2_Image/" target="_blank"><img src="send-icon.png" alt="Link" class="w-5"></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Project 2 -->
+      <div class="aspect-square bg-[url(my-work-2.png)] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+          <div>
+            <h2 class="font-semibold">Weather App</h2>
+            <p class="text-sm text-gray-700">HTML | JS API</p>
+          </div>
+          <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-lg group-hover:bg-lime-300 transition">
+            <a href="https://cveerababu15.github.io/Weather_Webiste/" target="_blank"><img src="send-icon.png" alt="Link" class="w-5"></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Project 3 -->
+      <div class="aspect-square bg-[url(my-work-3.png)] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+          <div>
+            <h2 class="font-semibold">Expensive Tracker</h2>
+            <p class="text-sm text-gray-700">Html,css,Js,Responsive Design</p>
+          </div>
+          <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-lg group-hover:bg-lime-300 transition">
+            <a href="https://cveerababu15.github.io/Expensive-Tracker/" target="_blank"><img src="send-icon.png" alt="Link" class="w-5"></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Project 4 -->
+      <div class="aspect-square bg-[url(my-work-4.png)] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+          <div>
+            <h2 class="font-semibold">Virtual Assistance</h2>
+            <p class="text-sm text-gray-700">Html,Css,JS</p>
+          </div>
+          <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-lg group-hover:bg-lime-300 transition">
+            <a href="https://cveerababu15.github.io/Veera-s-Assistance/" target="_blank"><img src="send-icon.png" alt="Link" class="w-5"></a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    <!-- extra cards -->
+<div id="more-projects" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-10 gap-5 hidden">
+
+    <!-- Project 5: News Website -->
+    <div class="aspect-square bg-[url(newspage.png)] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+      <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+        <div>
+          <h2 class="font-semibold">News Website</h2>
+          <p class="text-sm text-gray-700">HTML, CSS, JS, API</p>
+        </div>
+        <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-lg group-hover:bg-lime-300 transition">
+          <a href="#" target="_blank">
+            <img src="send-icon.png" alt="Link" class="w-5">
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Project 6: Portfolio CMS -->
+    <div class="aspect-square bg-[url(stopwatch.png)] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+      <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+        <div>
+          <h2 class="font-semibold">Stop_WAtch</h2>
+          <p class="text-sm text-gray-700">Html,css,js</p>
+        </div>
+        <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-lg group-hover:bg-lime-300 transition">
+          <a href="https://cveerababu15.github.io/Stop_watch/" target="_blank"><img src="send-icon.png" alt="Link" class="w-5"></a>
+        </div>
+      </div>
+    </div>
+    <div class="aspect-square bg-[url(texttovoice.png)] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+      <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+        <div>
+          <h2 class="font-semibold">Text-To-Voice</h2>
+          <p class="text-sm text-gray-700">Html,Css,JS</p>
+        </div>
+        <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-lg group-hover:bg-lime-300 transition">
+          <a href="https://cveerababu15.github.io/Text-To-Voice/" target="_blank"><img src="send-icon.png" alt="Link" class="w-5"></a>
+        </div>
+      </div>
+    </div>
+    <div class="aspect-square bg-[url(Random.png)] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+      <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+        <div>
+          <h2 class="font-semibold">Random Joke Generator</h2>
+          <p class="text-sm text-gray-700">Html,css,js, Api</p>
+        </div>
+        <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-lg group-hover:bg-lime-300 transition">
+          <a href="https://cveerababu15.github.io/Random-Joke-Generator/" target="_blank"><img src="send-icon.png" alt="Link" class="w-5"></a>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+    
+    </div>
+  </div>
+  
+   
+  <!-- Toggle Button -->
+  <a href="javascript:void(0)" onclick="toggleProjects()" id="toggle-btn" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[1px] border-gray-700 rounded-full py-3 px-10 mx-auto my-18 hover:bg-[#cd770d] duration-500 dark:text-white dark:border-white dark:hover:bg-[#darkHover]">
+    Show More <img src="right-arrow-bold.png" alt="" class="w-4 dark:hidden">
+    <img src="right-arrow-bold-dark.png" alt="" class="w-4 hidden dark:block">
+  </a>
+  
+  
+  <!-- Contact me   -->
+  <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url(footer-bg-color.png)] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none">
+    <h4 class="text-center mb-2 text-lg">Connect Wth me!</h4>
+    <h2 class="text-center text-5xl">Get In Touch</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+        Explore my latest work! These recent projects highlight my focus on modern design, responsive layouts, and practical solutions through hands-on development.
+    </p>
+
+    <!-- form tag-->
+     <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+        <input type="hidden" name="access_key" value="0803ed4c-f2a5-4b36-8069-dd5a2a6b8627">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 mb-8">
+            <input type="text" placeholder="Enter your name" class="p-3 outline-none border-[1px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90" required name="name">
+
+            <input type="email" placeholder="Enter your Email" class="p-3 outline-none border-[1px] border-gray-400 rounded-md  bg-white dark:bg-darkHover/30 dark:border-white/90" required name="email">
+        </div>
+        <textarea rows="6" placeholder="Enter Your Message" class="w-full p-4 outline-none border-[1px] border-gray-400 rounded-md bg-white mb-6  dark:bg-darkHover/30 dark:border-white/90" required name="message"></textarea>
+     <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hiver:bg-darkHover">Submit now
+        <img src="right-arrow-white.png" alt="" class="w-4">
+     </button>
+    </form>
+  </div>
+  
+<!-- Footer -->
+
+<div class="mt-20">
+    <div class="text-center">
+        <h1 class="flex items-center gap-1 font-bold text-3xl justify-center mb-2">
+            <span class="text-5xl text-red-600">V</span>EERA
+            <span class="text-5xl text-green-600">B</span>ABU
+            <span class="text-blue-500 text-4xl">∞</span>
+        </h1>
+        <div class="w-max flex items-center gap-2 mx-auto mt-2">
+            <img src="mail_icon.png" alt="" class="w-6 dark:hidden">
+            <img src="mail_icon_dark.png" alt="" class="w-6 hidden dark:block">
+            <span class="text-gray-700 dark:text-white">vicky8337284@gmail.com</span>
+        </div>
+    </div>
+    <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+        <p>© 2025 Veera Babu. All rights reserved.</p>
+        <ul class="flex justify-center gap-10 mt-4 sm:mt-0">
+          <li><a href="https://www.instagram.com/dads__call_me_dnk_21/" target="_blank" class="flex items-center gap-2">
+              <img src="instagram.png" alt="Instagram" class="w-5 h-5">
+              Instagram</a>
+          </li>
+          <li><a href="https://github.com/" target="_blank" class="flex items-center gap-2">
+              <img src="github.png" alt="GitHub" class="w-5 h-5">
+              GitHub
+            </a></li>
+          <li><a href="https://www.linkedin.com/in/c-veerababu-771a35284/" target="_blank" class="flex items-center gap-2">
+              <img src="linkedin.png" alt="LinkedIn" class="w-5 h-5">
+              LinkedIn </a></li>
+        </ul>
+      </div>
+      
+    
+
+</div>
+
+
+
+   <script src="script.js">
+
+       
+    </script>
+</body>
+</html>
